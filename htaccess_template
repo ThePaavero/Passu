@@ -1,0 +1,7 @@
+
+# Added by Passu starts
+AuthName "Protected area"
+AuthType Basic
+AuthUserFile [HTPASSWD_PATH]
+require valid-user
+# Added by Passu ends
