@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * passu CLI script
+ * @author Pekka S. <nospam@astudios.org>
+ * @package Passu
+ * @link https://github.com/ThePaavero/Passu
+ * @license MIT
+ */
+
 require 'quickcli.php';
 require 'PassuApp.php';
 
