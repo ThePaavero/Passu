@@ -8,17 +8,18 @@
  * @license MIT
  */
 
-require 'quickcli.php';
-require 'PassuApp.php';
+require 'bin/quickcli.php';
+require 'bin/PassuApp.php';
 
 $cli = new QuickCLI\QuickCLI('Passu');
 
 $cli->line('Welcome to ' . $cli->getAppName(), 2, 'light_cyan');
 
+$basepath = $cli->prompt('Enter project basepath (e.g. /var/www/project/x/)', true);
 $username = $cli->prompt('Enter username', true);
 $password = $cli->prompt('Enter password (leave empty for random)', false);
 
-$passu = new PassuApp\PassuApp();
+$passu = new PassuApp\PassuApp($basepath);
 
 if(empty($password))
 {
