@@ -22,6 +22,10 @@ class PassuApp
 		);
 	}
 
+	/**
+	 * Set basedir
+	 * @param string $basedir e.g. '/var/www/project_x/'
+	 */
 	public function setBaseDir($basedir)
 	{
 
