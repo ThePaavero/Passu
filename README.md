@@ -6,7 +6,7 @@ CLI script for protecting public dirs quickly
 Usage
 -----
 ```
-php  passu
+php passu
 ```
 
 The script will prompt for three things:
